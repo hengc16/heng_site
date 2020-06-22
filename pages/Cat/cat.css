@@ -1,0 +1,105 @@
+
+/* .top-container */
+.top-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E0EBE8;
+    height:50vh;
+    padding-top:50px;
+  }
+  .top-cloud{
+    position: absolute;
+    right:300px;
+    top:60px;
+  }
+  .bottom-cloud{
+    position: absolute;
+    left:300px;
+    top:300px;   
+  }
+/* display slider */
+
+.slide-container{
+    position: relative;
+    margin: 0 auto;
+}
+.mySlides{
+    background-color: #E0EBE8;
+    padding:100px 50px;
+    height: 100vh;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    color:#66bfbf;
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+    
+}
+.mySlides img {
+  width:auto;
+  height:100%;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color:#66bfbf;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* grid */
+.grid-wrapper{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+.box > img{
+    opacity: 0.8;
+    width: 100%;
+    cursor: pointer;
+}
+.box >img:hover{
+    opacity:1;
+}
+.box{
+    background-color: #E0EBE8;
+    padding:40px;
+    margin:20px;
+}
+/* The expanding image container */
+.container {
+    position: relative;
+    height:100vh;
+    display: none;
+  }
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }

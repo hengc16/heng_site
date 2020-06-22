@@ -1,0 +1,10 @@
+body {
+	font-family: "Times New Roman", Georgia, serif;
+	background: none;
+    color: black;
+    
+}
+
+header, img, footer,video {
+	display: none;
+}

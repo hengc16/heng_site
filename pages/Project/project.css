@@ -1,0 +1,76 @@
+hr{
+  border-style: none;
+  width: 5%;
+  border-style: dotted none none;
+  border-color:#d4f3ef;
+  border-width: 15px;
+
+}
+/* .top-container */
+.top-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E0EBE8;
+  height:50vh;
+  padding-top:50px;
+}
+.top-cloud{
+  position: absolute;
+  right:300px;
+  top:60px;
+}
+.bottom-cloud{
+  position: absolute;
+  left:300px;
+  top:300px;   
+}
+
+/* mid container */
+.project_1,
+.project_2{
+  margin-left: 200px;
+  display: flex;
+  text-align: left;
+}
+.project_desc{
+  margin-left:70px;
+}
+.project_1 li,
+.project_2 li{
+    color:#11999e;
+    font-family: verdana,'Monsterrat', sans-serif;
+    line-height: 2;
+    width: 70%;
+  }
+/* responsive when screen less than 600px */
+@media only screen and (max-width:600px){
+  .project_1,
+  .project_2{
+      font-size:0.5em;
+      padding: 0;
+  }
+}
+  #img1{
+    padding:40px;
+    width:360px;
+    height:240px;
+  }
+  #img2{
+    width:240px;
+    height:360px;
+    padding:0 40px;
+  }
+  #img1 , #img2{
+    opacity: 0.8;
+  }
+  #img1:hover, #img2:hover{
+    opacity: 1;
+  }
+
+  .questions{
+    width:80em;
+    margin:10px auto;
+    text-align: left;
+  }

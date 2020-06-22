@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/template.css">
+    <link rel="stylesheet" media = "screen" href="project.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class = "main-nav">
+          <li><a href="../../index.html">About</a></li>
+          <li><a href="../Project/project.html">Projects</a></li>
+          <li><a href="../Gallery/gallery.html">Gallery</a></li>
+          <li><a href="../Cat/cat.html">Cat</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li> 
+        </ul>
+      </nav>
+    </header>
+    <div class = "top-container">
+      <img class="top-cloud" src="../../imgs/cloud.png" alt="top-cloud" />
+      <h1>Projects</h1>
+      <img class="bottom-cloud" src="../../imgs/cloud.png" alt="bottom-cloud" />
+    </div>
+
+    <div class="project_1">
+      <a href="https://github.com/hengc16/NBAPlayerVisualization">
+        <img id = "img1" class ="img1" src="img/curry.png" alt="curry" onclick="go_git()" />
+      </a>
+      <div class =  "project_desc">
+        <h4>React JS based NBA Player Strength Visualization</h4>
+        <ul>
+          <li>
+            Created a dashboard using
+            <strong>React, D3, and Ant Design</strong> backed by API from
+            stats.nba.com to visualize individual player's shot data.
+          </li>
+          <li>
+            Created four extra filters and two shot themes (hexbin and scatter)
+            to provide more customized visualization on the shot charset
+          </li>
+          <li>
+            Developed an autocomplete player search bar providing a list of
+            players(image and name) in the suggestion list
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <hr>
+    <div class = "project_2">
+      <a href="https://github.com/hengc16/RecommendationEvent">
+        <img id = "img2"
+        src="img/recommendationsite.png"
+        alt="my recommendationsite project"/>
+      </a>
+      <div class = "project_desc">
+        <h4>Events Search and Ticket Recommendation Website</h4>
+        <ul>
+          <li>
+            Used <strong>HTML,CSS,and JavaScript</strong> to develop an
+            interactive web page, including (i) events discovery; (ii)
+            purchase tickets; and(iii) improvement in business recommendation
+            based on search history and favorite records.
+          </li>
+          <li>
+            Used <strong>Tomcat</strong> as a servlet container to implement
+            Java servlets with <strong>RESTful APIs</strong>(handling HTTP
+            requests and responses.)
+          </li>
+          <li>
+            Built relational databases(<strong>MySQL</strong>) to store user
+            data(search history and favorites) and current event
+            data(location, category, and price) from Ticketsmaster API.
+          </li>
+          <li>Filtered the events based on content-based algorithms.</li>
+        </ul>
+      </div>
+
+    </div>
+    <hr />
+    <h3>Project relate questions</h3>
+    <div class = "questions">
+      <div id = "q1">
+        <h4>
+          <strong
+            >Tell us about your favorite project experience - something that was
+            exciting, energizing, and personally satisfying.
+          </strong>
+        </h4>
+        <div id = "q1_answer">
+          My favorite project was the latest one, developing a react and
+          spring-based webcam personal fitness training website. I had a great team
+          to work on: (1) building an interactive, scalable website to support user
+          registration, training schedule and video stream with a trainer based on
+          React, Redux, and Spring; (2) implementing a schedule calendar with
+          big-react0calendar; (3) using OpenTok API to implement classroom video
+          chat function. This project expanded my knowledge and enhanced my
+          programming capabilities during above-mentioned steps. The most exciting
+          and energizing parts were that our team did a great job of building a
+          project from scratch and I was trained by a professional software engineer
+          during this process. Through the whole progress, our working efficiency
+          was emphasized by using (1) Sneakpeekit to sketch the wireframe of our
+          website; (2) Google Docs to update daily progress and difficulties; (3)
+          Zoom to set up engineer meeting on Monday, Wednesday, and Friday; (4) Git
+          to handle version-control, track changes of each file; (5) PowerPoint to
+          present to the project manager at the end. I believe I will put my best
+          into this internship and diverse skills into practice as a prepared
+          software engineer for your company.
+        </div>
+      </div> 
+    </div>
+    <hr />
+    <div class = "questions">
+      <h4>
+        Please give an example of something you changed/improved for the better.
+      </h4>
+      <div id= "q2_answer" >
+        Completing a project with limited teammates was challenging, our team
+        started with eight people but ended with four. For their personal reasons,
+        four members left before hitting the mid-range of the project. Initially,
+        due to the limited time period and technical difficulties, these issues
+        led to our lack of motivation in continuously achieving the project. As a
+        software engineer, I suffered from not being productive for our team, not
+        standing up for our team, and not being helpful for the other three
+        teammates who also lost confidence. It was not until then that I realized
+        the significance of leadership and decided to fight for this situation. I
+        decided to have a conversation with our project manager to come up with a
+        new minimum viable product. In order to deploy the project on time,
+        picking up on what they remained was necessary. Therefore, I did more jobs
+        on video stream API, testing existed code and communicating between
+        front-end and back-end people. Thanks to my last three teammates, we were
+        able to implement this interactive, scalable website project successfully
+        in an extremely short time.
+      </div>
+    </div>
+   
+    <hr />
+    <footer>
+      <a class="footer-link" href="https://www.linkedin.com/in/heng-cai/"
+        >LinkedIn</a>
+      <a class="footer-link" href="https://github.com/hengc16">Github</a>
+      <a class="footer-link" href="https://www.harrycai.com">Website</a>
+      <p>© 2020 Heng Cai.</p>
+    </footer>
+  </body>
+</html>

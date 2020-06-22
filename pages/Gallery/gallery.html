@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/template.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <link rel="stylesheet" media="screen" href="gallery.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class = "main-nav">
+          <li><a href="../../index.html">About</a></li>
+          <li><a href="../Project/project.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="../Cat/cat.html">Cat</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li> 
+        </ul>
+      </nav>
+    </header>
+    <div class = "top-container">
+      <img class="top-cloud" src="../../imgs/cloud.png" alt="top-cloud" />
+      <h1>My old art</h1>
+      <img class="bottom-cloud" src="../../imgs/cloud.png" alt="bottom-cloud" />
+    </div>
+    <!--    vue display slider-->
+    <div id = "vm">
+      <div class = "slide-container">
+        <div class = "mySlides">
+          <img :src= "curImg">
+        </div>
+        <div id = "btn-container">
+          <a id = "prev" @click = "prev()"><</a>
+          <a id = "next"@click = "next()">></a>
+        </div>
+      </div>
+      <!-- grid container for img -->
+      <div class ="grid-wrapper">
+        <div class ="box" @click = "jump_to(0)"><img src="img/large_30mo_4d230000dc301210.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(1)"><img src="img/large_5ftn_68e80000d9f51212.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(2)"><img src="img/large_gd1R_4e1b0000d8601214.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(3)" ><img src="img/large_iTQ1_55550000da3a1260.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(4)"><img src="img/large_N5jn_2edd000a09ca1211.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(5)"><img src="img/large_OKhB_5c800000d8f11261.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(6)"><img src="img/large_Tx3Q_4dcb0000d87d1214.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(7)"><img src="img/original_pXsa_634a000005201191.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(8)"><img src="img/p_large_1EbN_15a1000000bb121e.jpg" alt=""></div>
+        <div class ="box" @click = "jump_to(9)"><img src="img/p_large_dkoR_08f70000045b1215.jpg" alt=""></div>
+      </div>
+    </div>
+
+
+
+    <footer>
+      <a class="footer-link" href="https://www.linkedin.com/in/heng-cai/"
+        >LinkedIn</a>
+      <a class="footer-link" href="https://github.com/hengc16">Github</a>
+      <a class="footer-link" href="https://www.harrycai.com">Website</a>
+      <p>© 2020 Heng Cai.</p>
+    </footer>
+    <script src="gallery.js" async defer></script>
+  </body>
+</html>

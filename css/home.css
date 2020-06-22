@@ -1,0 +1,110 @@
+
+
+/* top container  */
+.top-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E0EBE8;
+    height:100vh;
+    padding-top:50px;
+}
+.top-cloud{
+    position: absolute;
+    right:300px;
+    top:60px;
+}
+.bottom-cloud{
+    position: absolute;
+    left:300px;
+    bottom:300px;   
+}
+/* somehow the height: same-as-width doesn't pass the css validation check  */
+#earth{
+    width:30%;
+    height:same-as-width;
+    transition: width 4s, height 4s, transform 4s;
+}
+#earth:hover{
+    transform:rotate(360deg);
+}
+@media only screen and (max-width:600px){
+    .top-container{
+        font-size:0.5em;
+    }
+}
+.pro{
+    text-decoration: underline;
+}
+
+/* mid container */
+.middle-container{
+    background-color: #FFFFFF;
+    padding:100px;
+}
+.profile{
+    margin-bottom: 100px;
+}
+.desc{
+    color:#11999e;
+    font-family: verdana,'Monsterrat', "Roboto:wght@500",sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+.education li{
+    
+    color:#11999e;
+    font-family: 'Monsterrat', sans-serif;
+}
+hr{
+    border-style: none;
+    width: 5%;
+    border-style: dotted none none;
+    border-color:#d4f3ef;
+    border-width: 15px;
+
+}
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    transition: width 1.5s, height 1.5s;
+}
+.bu-img{
+    width: 50%;
+}
+.wsu-img{
+    width: 50%;
+}
+
+
+/* contact me button */
+.contact-me-button {
+	box-shadow:inset 0px 0px 5px 0px #dcecfb;
+	background:linear-gradient(to bottom, #d4f5c1 5%, #66bfbf 100%);
+	background-color:#bddbfa;
+	border-radius:7px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 7px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #66bfbf;
+}
+.contact-me-button:hover {
+	background:linear-gradient(to bottom, #66bfbf 5%, #bddbfa 100%);
+	background-color:#66bfbf;
+}
+.contact-me-button:active {
+	position:relative;
+	top:1px;
+}
+.contact-me{
+    margin-top:50px;
+}
